@@ -1,0 +1,96 @@
+冬奥会正在如火如荼的举办，各大媒体网站中有关赛事活动的讨论热度持续升高，有不少黑产团伙份子也盯上了这难得的机会。组委会不仅发现了仿冒赛事官网的网站，也发现一些赛事相关的网站被挂了黑链，将流量引向了赌博、色情等非法网站，打击这些非法网站势在必行！
+
+赛题数据
+【8月1日】 http://dl.qianxin.com/vi9p1ck5-i5ol-fk61/datacon-data/dark_industry/darkindustry20200801_4afd29926db588548fe384dc70000d16ffd6e52b.zip
+
+sha1: 4afd29926db588548fe384dc70000d16ffd6e52b
+
+【8月2日】http://dl.qianxin.com/vi9p1ck5-i5ol-fk61/datacon-data/dark_industry/darkindustry20200802_13ed8f4bba39cb176b56b002abfad62a42c619c2.zip
+
+sha1: 13ed8f4bba39cb176b56b002abfad62a42c619c2
+
+【8月3日】http://dl.qianxin.com/vi9p1ck5-i5ol-fk61/datacon-data/dark_industry/darkindustry20200803_ffede6e9950b9dc0a86cd8f4d5f7fb1daeae3b4a.zip
+
+sha1: ffede6e9950b9dc0a86cd8f4d5f7fb1daeae3b4a
+
+【8月4日】http://dl.qianxin.com/vi9p1ck5-i5ol-fk61/darkindustry20200804_f044a119861514c9afeef921429df5858b99ed36.zip
+
+sha1: f044a119861514c9afeef921429df5858b99ed36
+
+【8月5日】http://dl.qianxin.com/vi9p1ck5-i5ol-fk61/darkindustry20200805_9c2b735502680c26de57a5433c25e88eb6f6bb14.zip
+
+sha1: 9c2b735502680c26de57a5433c25e88eb6f6bb14
+
+【8月6日】http://dl.qianxin.com/vi9p1ck5-i5ol-fk61/darkindustry20200806_ab5ce18836e961dfe38750f1e8b2b65487410a00.zip
+
+sha1: ab5ce18836e961dfe38750f1e8b2b65487410a00
+
+【8月7日】http://dl.qianxin.com/vi9p1ck5-i5ol-fk61/darkindustry20200807_63892a39300298c2dc922913bb28aa23af443367.zip
+
+sha1: 63892a39300298c2dc922913bb28aa23af443367
+
+【8月8日】http://dl.qianxin.com/vi9p1ck5-i5ol-fk61/darkindustry20200808_ffede6e9950b9dc0a86cd8f4d5f7fb1daeae3b4a.zip
+
+sha1:ffede6e9950b9dc0a86cd8f4d5f7fb1daeae3b4a
+
+【8月9日】http://dl.qianxin.com/vi9p1ck5-i5ol-fk61/darkindustry20200809_13ed8f4bba39cb176b56b002abfad62a42c619c2.zip
+
+sha1:13ed8f4bba39cb176b56b002abfad62a42c619c2
+
+【8月10日】http://dl.qianxin.com/vi9p1ck5-i5ol-fk61/darkindustry202008010_ab5ce18836e961dfe38750f1e8b2b65487410a00.zip
+
+sha1:ab5ce18836e961dfe38750f1e8b2b65487410a00
+
+【8月11日】http://dl.qianxin.com/vi9p1ck5-i5ol-fk61/darkindustry202008011_bc6b8a0d2b9349eeb0deb238187c9e314e92a9d0.zip
+
+sha1:bc6b8a0d2b9349eeb0deb238187c9e314e92a9d0
+
+【8月12-14日】http://dl.qianxin.com/vi9p1ck5-i5ol-fk61/darkindustry202008014_e93ce96d9f058ffb0ffe075822ceb5fd858edb54.zip
+
+sha1:e93ce96d9f058ffb0ffe075822ceb5fd858edb54
+
+赛程安排
+8月11日中午12点前，我们会放出8月11日至8月14日的所有比赛数据(会酌情考虑减少总的数据量)
+
+8月13日晚上22点前选手们需要提交答案及writeup
+
+8月14日中午12点我们将公布初步比赛结果，其中排名前五的选手需要准备答辩ppt等答辩材料
+
+8月15日下午14点开始线上答辩，决出前五名
+
+8月16日颁奖
+
+赛题内容：
+根据每日数据文件中提供的域名和URL链接，完成以下题目：
+
+  1.发现黑产相关网站并进行分类，在给出的基本黑产分类的基础上，发现更多类型的黑产。
+
+  2.发现的黑产相关网站是被人劫持还是自主行为判断，被劫持的话是劫持到哪里？
+
+  3.黑产网站关联性分析、团伙发现。
+
+提交内容
+  根据赛题内描述的具体要求，提交答案和Writeup，由评委团进行评分。
+
+题目说明：
+  1. 本题使用的数据为公开的开放数据，与实际场景几乎一样，属于实战化的题目。
+
+  2. 因数据时效性问题无法控制，本方向无标准答案，主要考察选手思路。
+
+网络黑产分析方向赛题黑产类别说明
+背景
+    有选手反馈对于一些分类的理解与我们有些偏差，因此出一份基础黑产类别说明。对于受影响较大的选手，可以考虑自行新增分类，或在writeup里详细说明对于该类别的理解，最好能给出一个网站示例。
+
+基础黑产类别说明
+说明：这里仅给出目前发现选手可能有歧异的分类，其它分类请选手自行搜索查询，还有疑问请及时反馈，我们会更新说明。
+
+    账号买卖：指的是网络虚拟账号买卖、租售，包括且不限于游戏账号、微信支付宝账号等
+
+    个人信息买卖：指买卖公民个人身份信息，包含四件套(银行卡、手机号、身份证、U盾)、隐私信息(包含切不限于快递信息、人脸信息等)、手持身份证照片等
+
+    黑客相关：指买卖黑客工具、黑客接单等
+
+    支付平台：指三方支付、四方支付、聚合支付等
+    
+    涉诈：包含且不限于各类杀猪盘、股票配资、理财、贷款诈骗、假冒正规交易、贷款网站（如咸鱼、转转、度小满）等等
+
