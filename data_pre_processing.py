@@ -5,7 +5,7 @@ from Readfiles import ReadFile
 path1 = 'dataset/datacon2021_darkindustry/domains.txt'
 path2 = 'dataset/datasets/darkindustry20200801_4afd29926db588548fe384dc70000d16ffd6e52b/task_20200801.txt'
 
-s = ReadFile(path1)
+s = ReadFile(path2)
 for html in s:
     linklist,linkstr,piclist,picstr,scriptlist,scriptstr,keyword,html_text,html_title = htmlinfo_extraction(html)
     print(html_title)
