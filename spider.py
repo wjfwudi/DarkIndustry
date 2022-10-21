@@ -22,28 +22,34 @@ def htmlinfo_extraction(URL):
 
     # 提取网页所有链接
     linklist = []
+    linkstr = ' '
     for link in soup.find_all('a'):
         all_link = link.get('href')
         absolute_link = re.findall(pattern, all_link)
         if len(absolute_link) !=0:
             linklist.append(absolute_link[0])
+            linkstr = linkstr + absolute_link[0] + ' '
 
 
     # 提取网页所有图片
     piclist = []
+    picstr = ' '
     for pic in soup.find_all('img'):
         all_pic = pic.get('src')
         absolute_pic = re.findall(pattern, all_pic)
         if len(absolute_pic) !=0:
             piclist.append(absolute_pic[0])
+            picstr = picstr + absolute_pic[0] + ' '
 
 
     # 提取网页所有脚本
     scriptlist = []
+    scriptstr = ' '
     for script in soup.find_all('script'):
         javascript = script.get('src')
         if javascript != None:
             scriptlist.append(javascript)
+            scriptstr = scriptstr + javascript + ' '
 
 
     # 提取页面关键词
@@ -67,9 +73,9 @@ def htmlinfo_extraction(URL):
     # print(soup.p['class'])
     # print(soup.a)
 
-    return linklist,piclist,scriptlist,keyword,html_text,html_title
+    return linklist,linkstr,piclist,picstr,scriptlist,scriptstr,keyword,html_text,html_title
 
 
-url = 'https://www.douban.com/'  # 菜鸟教程搜索页面
-linklist,piclist,scriptlist,keyword,html_text,html_title = htmlinfo_extraction(url)
-print(html_title)
+# url = 'https://www.douban.com/'  # 菜鸟教程搜索页面
+# linklist,linkstr,piclist,picstr,scriptlist,scriptstr,keyword,html_text,html_title = htmlinfo_extraction(url)
+# print(picstr)
