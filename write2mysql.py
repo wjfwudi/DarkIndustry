@@ -1,6 +1,6 @@
 
 import pymysql
-from spider import htmlinfo_extraction
+# from spider import htmlinfo_extraction
 
 
 # url = 'https://www.douban.com/'  # 菜鸟教程搜索页面
@@ -24,6 +24,7 @@ def ConnectMysql(ID,URL,LINKSTR,PICSTR,SCRIPTSTR,KEYWORD,HTML_TITLE,HTML_TEXT):
     #5.提交数据库事务
     conn.commit()
     conn.close()
+
 
 
 # ConnectMysql(id,url,linkstr,picstr,scriptstr,keyword,html_title,html_text)
