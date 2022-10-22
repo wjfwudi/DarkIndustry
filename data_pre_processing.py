@@ -19,11 +19,13 @@ path12 = 'dataset/datasets/darkindustry202008014_e93ce96d9f058ffb0ffe075822ceb5f
 
 s = ReadFile(path2)
 for html in s:
-    linklist,linkstr,piclist,picstr,scriptlist,scriptstr,keyword,html_text,html_title = htmlinfo_extraction(html)
-    print(html_title)
+    print("爬取" + html + "网页的数据...")
+    linklist,linkstr,piclist,picstr,scriptlist,scriptstr,keyword,html_text,html_title,access_flag = htmlinfo_extraction(html)
+    ConnectMysql(html,linkstr,picstr,scriptstr,keyword,html_title,html_text,access_flag)
+    print(html + "网页的数据爬取成功，并已保存在数据库中")
 
-linklist, linkstr, piclist, picstr, scriptlist, scriptstr, keyword, html_text, html_title = htmlinfo_extraction(s[2])
-print(html_title)
+# linklist, linkstr, piclist, picstr, scriptlist, scriptstr, keyword, html_text, html_title = htmlinfo_extraction(s[2])
+# print(html_title)
 
 
 # url = 'http://www.baidu.com/'  # 菜鸟教程搜索页面
