@@ -9,8 +9,8 @@ import ssl
 def htmlinfo_extraction(URL):
     url = URL
     header = {
-        'User-Agent': 'Mozilla/5.0 (X11; Fedora; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
-        'Cookie': 'NID=511=hMakUYChikZOBJ6ugeaW10T3Moquvjte8aQNeJ8P_ikMVXTIwFaG4dqHmaRRDuidjCSrNks98WTUjoRD7EFTeilAleMmQqklwfke97UqmrfUu5kXUkgCtAILKf0GNiOmL0F0U84e5CoeP1TLq9lt0Oa1Y3bG9x9ym6OiE_w3I4w; 1P_JAR=2022-10-21-10; AEC=AakniGMIdUk9h9ORS3MShecj296zeTZ_LMWJmGyGzkSQhIefOWSZFTvffg; DV=Q3qn8tfAE-UlYH8oIYu_J3i54M6iP1h_Hk7tc0SfCwEAAAA; OTZ=6734093_24_24__24_'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36',
+        'Cookie': 'AEC=AakniGPStgBkE78oYqyNUWGnKvt78i97hfV89Q9M1Qfga3WpkcVoaONb16Q; OTZ=6738220_24_24__24_; DV=Q-AFApj3WM0gYIMZotJe81q5eO2OQBjiKlD-42UvvwIAAAA; NID=511=VZCPeWmnoWY__R9euAw8DYLgdEl82NMiD-xnUIUO0yDS1OoLOjp4xydWKDf9Bs0yBs9dHPk3Aa3cho_t923bwGxW47Sv8bga2QhZsKpbPHmGJjYqJDltvsFFRQIYI2dZ4ivRTMvaOg5QhpTBLuFDKMlgKQV15GUOE4J85jmTjG2v8SuL-90_VhQVZvLMpN6kjMarKhbnIA; 1P_JAR=2022-10-24-07'
     }  # 头部信息
     ssl._create_default_https_context = ssl._create_unverified_context  # 关闭https的认证
     try:
@@ -84,7 +84,7 @@ def htmlinfo_extraction(URL):
         # print(soup.p['class'])
         # print(soup.a)
 
-    except urllib.error.HTTPError as e:
+    except urllib.error.URLError as e:
         access_flag = 0  # 网页不可访问
         linklist = None
         linkstr = None
