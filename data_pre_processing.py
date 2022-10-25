@@ -17,17 +17,17 @@ path11 = 'dataset/datasets/darkindustry202008011_bc6b8a0d2b9349eeb0deb238187c9e3
 path12 = 'dataset/datasets/darkindustry202008014_e93ce96d9f058ffb0ffe075822ceb5fd858edb54/task_20200812_20200814.txt'
 
 
-s = ReadFile(path2)
-for html in s:
-    print("爬取" + html + "网页的数据...")
-    linklist,linkstr,piclist,picstr,scriptlist,scriptstr,keyword,html_text,html_title,access_flag = htmlinfo_extraction(html)
-    ConnectMysql(html,linkstr,picstr,scriptstr,keyword,html_title,html_text,access_flag)
-    print(html + "网页的数据爬取成功，并已保存在数据库中")
+# s = ReadFile(path2)
+# for html in s:
+#     print("爬取" + html + "网页的数据...")
+#     linklist,linkstr,piclist,picstr,scriptlist,scriptstr,keyword,html_text,html_title,access_flag = htmlinfo_extraction(html)
+#     ConnectMysql(html,linkstr,picstr,scriptstr,keyword,html_title,html_text,access_flag)
+#     print(html + "网页的数据爬取成功，并已保存在数据库中")
 
 # linklist, linkstr, piclist, picstr, scriptlist, scriptstr, keyword, html_text, html_title = htmlinfo_extraction(s[2])
 # print(html_title)
 
 
-# url = 'http://www.baidu.com/'  # 菜鸟教程搜索页面
-# linklist,linkstr,piclist,picstr,scriptlist,scriptstr,keyword,html_text,html_title = htmlinfo_extraction(url)
-# print(keyword)
+url = 'http://17173.chat'  # 菜鸟教程搜索页面
+linklist,linkstr,piclist,picstr,scriptlist,scriptstr,keyword,html_text,html_title,access_flag = htmlinfo_extraction(url)
+print(keyword)
