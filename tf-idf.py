@@ -13,6 +13,6 @@ def tf_idf(text):
     keywords = jieba.analyse.extract_tags(text, topK=5, withWeight=False, allowPOS=())
     return keywords
 
-text = '关键词是能够表达文档中心内容的词语，常用于计算机系统标引论文内容特征、信息检索、系统汇集以供读者检阅。关键词提取是文本挖掘领域的一个分支，是文本检索、文档比较、摘要生成、文档分类和聚类等文本挖掘研究的基础性工作'
+text = '澳门六合彩499377.com，澳门六合彩资料，澳门六合彩官网，澳门六合彩开奖结果，澳门六合彩开奖直播，澳门六合彩论坛，澳门六合彩图库，台湾六合彩，新加坡六合彩'
 keywords  = tf_idf(text)
 print(keywords)
