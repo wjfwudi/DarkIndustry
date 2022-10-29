@@ -10,9 +10,9 @@ def tf_idf(text):
     # withWeight 为是否一并返回关键词权重值，默认值为 False
     # allowPOS 仅包括指定词性的词，默认值为空，即不筛选
 
-    keywords = jieba.analyse.extract_tags(text, topK=5, withWeight=False, allowPOS=())
+    keywords = jieba.analyse.extract_tags(text, topK=10, withWeight=False, allowPOS=())
     return keywords
 
-text = '澳门六合彩499377.com，澳门六合彩资料，澳门六合彩官网，澳门六合彩开奖结果，澳门六合彩开奖直播，澳门六合彩论坛，澳门六合彩图库，台湾六合彩，新加坡六合彩'
-keywords  = tf_idf(text)
-print(keywords)
+# text = '澳门六合彩499377.com，澳门六合彩资料，澳门六合彩官网，澳门六合彩开奖结果，澳门六合彩开奖直播，澳门六合彩论坛，澳门六合彩图库，台湾六合彩，新加坡六合彩'
+# keywords  = tf_idf(text)
+# print(keywords)
